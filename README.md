@@ -23,7 +23,7 @@ Let’s take a player collider for example, the collider will ask itself “What
 And we set the player’s collision layer to 1 and collision mask to 1. <br>
 The player **would** be able to walk through the wall. <br>
 <p align="left" width="100%">
-<img src="assets/render_pic2.png" width="40%">
+<img src="assets/render_pic2.png" width="65%">
 </p>
 
 2.  If we set the laser wall’s collision layer to both 1 and 2, <br>
@@ -40,7 +40,7 @@ We set the enemies’ collision layer to 2, and set collision mask to 1. <br>
 We set the player’s collision layer to 1, and set collision mask to both 1 and 2. <br>
 The enemies would be able to walk through each other, while both the enemies and the player won’t go through each other. <br>
 <p align="left" width="100%">
-<img src="assets/render_pic3.png" width="40%">
+<img src="assets/render_pic3.png" width="65%">
 </p>
 <br>
 
@@ -48,10 +48,10 @@ The enemies would be able to walk through each other, while both the enemies and
 Working with a lot of layer and keeping track of them could get confusing so you might find it useful to assign them a name:
 Go to “Project” → “Project Settings” → “Layer Names”.
 <p align="left" width="100%">
-<img src="assets/gd_pic1.png" width="35%">
+<img src="assets/gd_pic1.png" width="60%">
 </p>
 <p align="left" width="100%">
-<img src="assets/gd_pic2.png" width="35%">
+<img src="assets/gd_pic2.png" width="60%">
 </p>
 <br>
 
@@ -82,7 +82,7 @@ uint mask = 0x3F3;
 
 ### Calculate with Powers of Two: <br>
 Every layer is represented with 2 by the power of the layer’s number (layer count starts at 0): <br>
-```css
+```cs
 Layer 1 is 2^0 = 1
 Layer 2 is 2^1 = 2
 Layer 3 is 2^2 = 4
