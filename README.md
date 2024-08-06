@@ -56,12 +56,12 @@ Go to “Project” → “Project Settings” → “Layer Names”.
 <br>
 
 ## How to use in code <br>
-Some times we will need to dynamically change the collision detection of objects, luckily there are *multiple* ways for us to do so in Godot C#. <br>
+Sometimes we will need to dynamically change the collision detection of objects, luckily there are *multiple* ways for us to do so in Godot C#. <br>
 
 ### Calculate layers <br>
 First we will need to understand how both masks and layers are programmed. <br>
-In code the layers are specified as a bitmask represented by hexadecimal or decimal notation. <br>
-(Reading from right to left, each 1 represents an enabled layer, and each 0 represents a disabled one) <br>
+In code the layers are specified as a bitmask represented by [decimal](https://en.wikipedia.org/wiki/Decimal) or [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) notation. <br>
+*(Reading from right to left, each 1 represents an enabled layer, and each 0 represents a disabled one)* <br>
 In this example layers 1,2 and 4 are enabled: <br>
 ```cs
 uint mask = 0b00000000_00000000_00000000_0001011;
@@ -101,7 +101,7 @@ To represent all the layers: <br>
 ```cs
 int CollisionLayers = ~0; 
 ```
-(‘~’ is a Bitwise NOT operation, so it inverts the 0 into a 1, enabling all of the layers) <br>
+*(‘~’ is a Bitwise NOT operation, so it inverts the 0 into a 1, enabling all of the layers)* <br>
 Remove layers with bit shifting (layer count starts at 0): <br>
 ```cs
 ~(base_bitmask << layer)
@@ -125,3 +125,6 @@ mask &= ~((1 << 7) | (1 << 15));
 CollisionMask = (uint)mask; 
 ```
 [More about bit shifting](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators)
+
+### Extra reference:
+[Physics introduction](https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html#collision-layers-and-masks)
