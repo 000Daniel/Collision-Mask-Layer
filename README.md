@@ -19,12 +19,12 @@ Collision masks are the layers that the object **scans** for collision. <br>
 Let’s take a player collider for example, the collider will ask itself “What can I see? Who can stop me?” <br>
 <br>
 ### Example
+<p>
+	
 1.  If we set the laser wall’s collision layer to 2 and collision mask to 2. <br>
 And we set the player’s collision layer to 1 and collision mask to 1. <br>
 The player **would** be able to walk through the wall. <br>
-<p align="left" width="100%">
 <img src="assets/render_pic2.png" width="55%">
-</p>
 
 2.  If we set the laser wall’s collision layer to both 1 and 2, <br>
 the player **won’t** be able to go through the wall. <br>
@@ -33,6 +33,7 @@ the player **won’t** be able to go through the wall. <br>
 And set the player’s collision mask to both 1 and 2. <br>
 The player **won’t** be able to pass through the wall. <br>
 <br>
+</p>
 
 ### Another example:
 Let’s say we have enemies in our game. <br>
