@@ -23,7 +23,7 @@ Let’s take a player collider for example, the collider will ask itself “What
 And we set the player’s collision layer to 1 and collision mask to 1. <br>
 The player **would** be able to walk through the wall. <br>
 <p align="left" width="100%">
-<img src="assets/render_pic2.png" width="70%">
+<img src="assets/render_pic2.png" width="55%">
 </p>
 
 2.  If we set the laser wall’s collision layer to both 1 and 2, <br>
@@ -40,7 +40,7 @@ We set the enemies’ collision layer to 2, and set collision mask to 1. <br>
 We set the player’s collision layer to 1, and set collision mask to both 1 and 2. <br>
 The enemies would be able to walk through each other, while both the enemies and the player won’t go through each other. <br>
 <p align="left" width="100%">
-<img src="assets/render_pic3.png" width="70%">
+<img src="assets/render_pic3.png" width="55%">
 </p>
 <br>
 
