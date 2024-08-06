@@ -124,7 +124,7 @@ int mask = ~0;
 mask &= ~((1 << 7) | (1 << 15));
 CollisionMask = (uint)mask; 
 ```
-[More about bit shifting](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators)
-
+[More about bit shifting](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators) <br>
+<br>
 ### Extra reference:
 [Physics introduction](https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html#collision-layers-and-masks)
